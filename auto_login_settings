@@ -1,0 +1,106 @@
+import sys, os
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QLineEdit
+from PyQt5.QtWidgets import *
+from PyQt5 import uic   # ui 파일을 사용하기 위한 모듈 import
+from PyQt5.QtCore import Qt
+from PyQt5.QAxContainer import QAxWidget
+from main import mainWindow
+#from strategy1 import mainWindow
+import configparser
+from pysbapi import pySBtraderOCX
+from PyQt5.QtGui import QFont, QIcon
+import resources  # 디자인 리소스
+
+class WindowClass(QMainWindow) :
+	def __init__(self) :
+		super().__init__()
+
+		# UI 로딩 생략 가능 (자동로그인이라 UI 안 써도 됨)
+		# uic.loadUi('login_View.ui', self)
+
+		path = 'login_View.ui'       
+		uic.loadUi(path,self)
+		self.setWindowIcon(QIcon('./icon/taskbaricon.png'))
+
+		# 설정파일
+		config = configparser.ConfigParser()
+		config.read('./config.ini', encoding='utf-8')
+
+		# 마스터 파일 다운로드 경로
+		self.data_path = config.get('PATH', 'data_path')
+		self.NH_filespace = self.data_path
+		ocx_module_name = config.get('PATH', 'ocx_module_name')
+
+		self.pySBtrader = pySBtraderOCX(ocx_module_name)
+		self.lineEdit_ID.setText(config["SYSTEM"]["id"])
+
+		self.socket_status = 1
+		self.connection = False
+
+		# OCX를 문서파일로 내보내기
+		with open(os.path.dirname(os.path.realpath(__file__)) + "\\documentation.txt", 'w+') as f:
+			f.write(self.pySBtrader.SBtrader.generateDocumentation())
+
+		# 디자인 컴포넌트들 세팅
+		self.LoginButton.setEnabled(False)
+		self.lineEdit_PW.setEchoMode(QLineEdit.Password)
+		self.lineEdit_CERT.setEchoMode(QLineEdit.Password) 
+
+		# 계정정보
+		self.id = config['SYSTEM']['id']
+		self.pwd = config['SYSTEM']['pwd']
+		self.cert_pwd = config['SYSTEM']['cert']
+
+		# 주요 시그널 연결
+		self.pySBtrader.SBtrader.LoginOK.connect(self.connectLoginOK)
+		self.pySBtrader.SBtrader.SocketClosed.connect(self.connectSocketClosed)
+		self.pySBtrader.SBtrader.FinMasterdown.connect(self.connectFinMasterdown)
+
+		# 자동 접속 시작
+		result = self.pySBtrader.doConnect()
+		if result == 1:
+			print("서버 연결 성공")
+			self.connection = True
+			self.pySBtrader.doMasterDownload()
+		else:
+			print("서버 연결 실패")
+
+	def connectSocketClosed(self, errcode):
+		if errcode == 0:
+			self.socket_status = 0
+		else:
+			self.socket_status = 1
+			print("연결 끊김")
+			self.connection = False
+
+	def login(self):
+		# 실계좌 접속 (0), 모의계좌는 2
+		self.pySBtrader.doLogin(2, self.id, self.pwd, self.cert_pwd)
+
+	def connectFinMasterdown(self, result):
+		if result == 1:
+			print("마스터 파일 다운로드 완료")
+			self.login()
+		else:
+			print("마스터 파일 다운로드 실패")
+
+	def connectLoginOK(self, errcode: str, recvData: str):
+		if errcode == "00000":
+			print("로그인 성공")
+			self.afterlogin()
+		else:
+			print("로그인 실패:", errcode, recvData)
+
+	def afterlogin(self):
+		# 로그인 성공 시 바로 mainWindow 실행
+		self.w = mainWindow(self.pySBtrader, self.data_path)
+		self.w.show()
+		self.hide()
+
+if __name__ == "__main__":
+	app = QApplication(sys.argv)
+	font = QFont("Inter", 9)
+	app.setFont(font)
+	Window = WindowClass() 
+	Window.show()
+	app.exec_()
