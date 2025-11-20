@@ -1,4 +1,4 @@
-import sys, os
+import sys, os 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QLineEdit
 from PyQt5.QtWidgets import *
 from PyQt5 import uic   # ui 파일을 사용하기 위한 모듈 import
