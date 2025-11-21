@@ -13,7 +13,7 @@
 - Python 3, anaconda
 -----------------------------------
 
-### 1. 개발 환경 구축하기
+### [1. 개발 환경 구축하기](https://wikidocs.net/193550)
   * NH API 다운로드
   * python 설치
   * vscode 설치
