@@ -23,31 +23,31 @@
   * 디자인 툴 설치
   * vscode 환경설정
 
-### 2. pyQt5로 UI 제작하기
+### [2. pyQt5로 UI 제작하기](https://wikidocs.net/197891)
   * login page 만들기
   * main page 만들기
   * login page 디자인하기
   * main page 디자인하기
 
-### 3. 로그인부터 버전처리
+### [3. 로그인부터 버전처리](https://wikidocs.net/197803)
 
-### 4. 종목 받아오기
+### [4. 종목 받아오기](https://wikidocs.net/198164)
 
-### 5. 계좌 연결하기 
+### [5. 계좌 연결하기](https://wikidocs.net/197892)
   * 5초마다 예탁자산 화면 업데이트
   * 예탁 자산 화면 구현
 
-### 6. 실시간 OHLCV 받아오기
+### [6. 실시간 OHLCV 받아오기](https://wikidocs.net/197893)
 
-### 7. 매수, 매도 구현하기
+### [7. 매수, 매도 구현하기](https://wikidocs.net/197895)
 
-### 8. 실시간 호가창 구현하기
+### [8. 실시간 호가창 구현하기](https://wikidocs.net/197894)
 
-### 9. 미결제 약정 실시간으로 구현하기
+### [9. 미결제 약정 실시간으로 구현하기](https://wikidocs.net/197901)
   * 실시간 O1에서 미결제약정 테이블 업데이트
   * 실시간 KA(현재가)를 미결제약정 테이블에 업데이트
 
-### 10. 체결, 미체결 탭 구현하기
+### [10. 체결, 미체결 탭 구현하기](https://wikidocs.net/197896)
   * 전체 코드 보기
   * 세부 코드 분석
 
@@ -56,7 +56,8 @@
   * [main.py](https://github.com/NHFutures/API-System-trading-Helper/blob/main/main.py)
 
 ### 12. 부록
-  * 주야간 확인
-  * 분봉 데이터 만들기
+  * [주야간 확인](https://wikidocs.net/197906)
+  * [분봉 데이터 만들기](https://wikidocs.net/198464)
 
+#### NH선물 API 시스템 거래 텔레그램 방
 ![대체 텍스트](https://postfiles.pstatic.net/MjAyNTExMTlfMTYg/MDAxNzYzNTMxNTQ5NDAy.CqmNWeW5A81zDZSMFA2CjOHTC_ubNIx3IZscvqEhDAsg.5l20UH5TXcIs1qykVztSCEGUxPQwlE11rVpuMB-baGwg.JPEG/API_%EA%B9%83%ED%97%88%EB%B8%8C_%ED%94%84%EB%A1%9C%ED%95%84_(1).jpg?type=w966)
