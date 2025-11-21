@@ -52,8 +52,8 @@
   * 세부 코드 분석
 
 ### 11. 전체코드
-  * login.py
-  * main.py
+  * [login.py](https://github.com/NHFutures/API-System-trading-Helper/blob/main/login.py)
+  * [main.py](https://github.com/NHFutures/API-System-trading-Helper/blob/main/main.py)
 
 ### 12. 부록
   * 주야간 확인
