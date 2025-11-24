@@ -1,0 +1,94 @@
+## login page 디자인하기
+
+#### normal 하게 완성한 login page 에 보기 좋게 디자인을 입혀봅니다.
+  1. 먼저 Figma 프로그램을 이용해 전체 페이지 디자인 구상을 만듭니다.
+<img src="https://wikidocs.net/images/page/198213/1.png" width="400" height="600"/>
+
+  2. 그 중에 필요한 이미지들을 Figma 에서 다운받아 작업할 폴더 안에 images 라는 폴더를 만들어 저장합니다. 방법은 다음과 같습니다.
+     
+#### Figma 에서는 전체 또는 선택된 FRAME/이미지를 JPG/PNG 파일로 내보낼 수 있습니다.
+#### 내보낼 컴포넌트를 우선 선택합니다.
+#### 디자인탭에서 아래로 쭉 내리면 제일 아래에 Export 메뉴가 있는데 click 하면 Export 버튼이 나옵니다. 버튼 위에 파일형식을 선택한 뒤 눌러서 다운받습니다
+#### 참고로 1개만 선택하면 파일로, 2개 이상 선택하면 압축파일로 다운로드 됩니다.
+#### 다운받은 파일은 일단 ‘다운로드’ 폴더에 저장되는데 처음 파일 이름은 Export 버튼에 있던 이름으로 저장됩니다. 원하는 파일이름으로 변경해 만들어 놓은 images 폴더로 옮겨줍니다.
+
+<img src="https://wikidocs.net/images/page/198213/2.png" width="1200" height="500"/>
+
+#### 다시 Qt Designer를 열고 만들었던 ‘login_View.ui’ 파일을 열어줍니다.
+
+
+  3. 이미지 리소스(resource) 등록하기
+
+#### designer 우측 하단에 있는 리소스 탐색기에서 연필 모양의 아이콘을 click 합니다.
+
+<img src="https://wikidocs.net/images/page/198213/4.png" width="600" height="500"/>
+
+#### 생성된 리소스파일에서 접두사 생성 버튼을 눌러 접두사를 만듭니다. ( 여러개의 이미지들을 구분해서 관리하기 편하기 때문에 하는 것. 생략해도 문제는 없음. )
+#### 생성된 접두사를 click 후 이미지 파일 불러오기 버튼을 클릭해 이미지를 추가해 줍니다.( 여러번 가능 함. 옆에 있는 ‘-’ 버튼으로 삭제도 가능 )
+#### 추가된 이미지들을 확인 버튼을 눌러 리소스 파일에 저장해줍니다.
+
+<img src="https://wikidocs.net/images/page/198213/3.png" width="400" height="300"/>
+#### 리소스 탐색기에 추가된 이미지들을 확인할 수 있습니다.
+
+  4. ui에 이미지 적용하기
+     
+#### 먼저 이미지를 적용할 객체를 선택하고 마우스 우 click 으로 ‘styleSheet 바꾸기’ 를 click 해 styleSheet 창을 엽니다.
+#### styleSheet 창에 다음과 같이 객체 이름을 적어넣어 스타일을 바꿀 준비를 합니다.
+<img src="https://wikidocs.net/images/page/198213/7.png" width="700" height="300"/>
+
+#### ‘메뉴’ 바에서 ‘리소스 추가’ 오른쪽에 있는 dropdown 버튼을 클릭해 ‘border-image’ 를 선택합니다.
+<img src="https://wikidocs.net/images/page/198213/8.png" width="600" height="300"/>
+
+
+#### 리소스 선택창이 열리면 적용할 이미지를 click 하고 확인 버튼을 선택합니다.
+<img src="https://wikidocs.net/images/page/198213/9.png" width="500" height="300"/>
+
+
+#### 다음과 같이 code 가 적용되는 것을 볼 수 있습니다.
+<img src="https://wikidocs.net/images/page/198213/10.png" width="1000" height="300"/>
+
+
+#### 저대로 적용하면 바탕화면 이미지가 input LineEdit 및 로그인 버튼까지 전체 화면을 다 덮어버리므로 아래처럼 약간의 code 수정을 하고 ‘적용’ , ‘확인’ 버튼을 click 합니다.
+<img src="https://wikidocs.net/images/page/198213/11.png" width="1000" height="300"/>
+
+
+#### 아래와 같이 이미지가 잘 적용되었다면 성공입니다.
+<img src="https://wikidocs.net/images/page/198213/12.png" width="600" height="500"/>
+#### 저장 후 미리보기로 잘 적용이 되었는지 한번 더 확인합니다.
+
+#### 다른 이미지와 스타일 적용해 화면 완성하기
+#### login page Title 과 실전, 모의 버튼도 이미지를 적용해 줍니다.
+#### LineEdit 부분은 ‘border-radius’ 를 제외하면 특별히 적용할 부분이 없으므로 생략하고
+#### 로그인 버튼 활성, 비활성 스타일을 간단하게 설명하면 다음과 같습니다.
+    * 비활성일 때 - 기본 버튼 속성 적용
+    * 활성 일때 - enable 속성 젹용
+```
+#LoginButton:enabled { background-color: #FFB819; }
+```
+
+#### 전체 코드는 아래와 같습니다.
+<img src="https://wikidocs.net/images/page/198213/13.png" width="700" height="500"/>
+
+#### window title 에도 이미지를 적용하고 이름을 바꿔줍니다. 먼저 리소스 탐색기에서 적용할 이미지를 추가합니다.( 상단의 내용 참고 ) 객체 탐색기에서 ‘mainWindow’ 개체를 선택하고 속성편집기에서 ‘windowTitle’ 의 text 를 변경합니다. 그 다음 ‘windowicon’ 을 click 해 우측의 dropdown 버튼을 click 해서 ‘리소스 선택’ 을 click 해 리소스 선택창을 열고 적용할 이미지를 선택 후 확인 버튼을 누르면 window title 이 변경됩니다.
+#### 적용이 다 되었으면 저장 후 미리보기로 확인해 아래와 같이 보이면 성공입니다.
+<img src="https://wikidocs.net/images/page/198213/14.png" width="600" height="500"/>
+
+***
+
+- login.py에서 이미지 적용하기
+#### 먼저 vscode를 관리자 권한으로 실행해 작업용 폴더를 불러온 뒤 탐색기에 있는 폴더명 옆 파일생성 아이콘을 click 해서 login.py file 과 main.py file 을 개발용 폴더 안에 생성합니다. ( main.py 는 ‘개발용 패키지 설치’ 할 때 먼저 만들어놨으므로 login.py 만 추가 생성합니다. )
+<img src="https://wikidocs.net/images/page/198213/15.png" width="600" height="400"/>
+
+#### file 에 다음 code 들을 차례대로 입력합니다.
+#### 작업 폴더 안에 생성된 resource.qrc 파일을 python 파일로 변환해 주기 위해 아래처럼 터미널에 ‘ pyrcc5 resources.qrc(생성한 리소스 파일명) -o resources.py(생성할 python 파일명 - 원하는 이름으로 하되 대체로 리소스 파일과 비슷하게 만듬) ’ code 를 입력해 주고 실행시켜 줍니다.
+
+<img src="https://wikidocs.net/images/page/198213/17.png" width="1200" height="40"/>
+
+#### 파일 탐색기에 resources.py 파일이 생성된 걸 확인합니다.
+#### 생성된 파일을 열어보면 아래와 같은 형식으로 되어 있음을 확인할 수 있습니다.
+<img src="https://wikidocs.net/images/page/198213/19.png" width="700" height="500"/>
+
+#### 이제 생성된 파일을 login.py 파일에 ' import (python 파일명) ' 으로 참고해 적용합니다.
+<img src="https://wikidocs.net/images/page/198213/14.png" width="600" height="500"/>
+
+#### error 없이 디자인 했던 화면이 실행되면 성공입니다.
