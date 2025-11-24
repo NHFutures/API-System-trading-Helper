@@ -21,10 +21,10 @@
   * vscode 환경설정
 
 ### 2. pyQt5로 UI 제작하기
-  * [login page 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/login_page_design.md)
-  * main page 만들기
-  * login page 디자인하기
-  * main page 디자인하기
+  * [login page 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Build_Login_Page.md)
+  * [main page 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Build_Main_Page.md)
+  * [login page 디자인하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Design_Login_Page.md)
+  * [main page 디자인하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Design_Main_Page.md)
 
 ### [3. 로그인부터 버전처리](https://wikidocs.net/197803)
 
