@@ -12,7 +12,7 @@
 #### 참고로 1개만 선택하면 파일로, 2개 이상 선택하면 압축파일로 다운로드 됩니다.
 #### 다운받은 파일은 일단 ‘다운로드’ 폴더에 저장되는데 처음 파일 이름은 Export 버튼에 있던 이름으로 저장됩니다. 원하는 파일이름으로 변경해 만들어 놓은 images 폴더로 옮겨줍니다.
 
-<img src="https://wikidocs.net/images/page/198213/2.png" width="1200" height="500"/>
+<img src="https://wikidocs.net/images/page/198213/2.png" width="700" height="400"/>
 
 #### 다시 Qt Designer를 열고 만들었던 ‘login_View.ui’ 파일을 열어줍니다.
 
