@@ -21,13 +21,18 @@
 
 #### designer 우측 하단에 있는 리소스 탐색기에서 연필 모양의 아이콘을 click 합니다.
 
-<img src="https://wikidocs.net/images/page/198213/4.png" width="600" height="500"/>
+<img src="https://wikidocs.net/images/page/198213/3.png" width="600" height="300"/>
+
+#### 열린 리소스 편집창에서 좌측 하단의 '새 리소스 파일' 아이콘을 클릭하고 리소스 파일(.qrc)을 생성합니다.
+
+<img src="https://wikidocs.net/images/page/198213/4.png" width="400" height="300"/>
 
 #### 생성된 리소스파일에서 접두사 생성 버튼을 눌러 접두사를 만듭니다. ( 여러개의 이미지들을 구분해서 관리하기 편하기 때문에 하는 것. 생략해도 문제는 없음. )
 #### 생성된 접두사를 click 후 이미지 파일 불러오기 버튼을 클릭해 이미지를 추가해 줍니다.( 여러번 가능 함. 옆에 있는 ‘-’ 버튼으로 삭제도 가능 )
 #### 추가된 이미지들을 확인 버튼을 눌러 리소스 파일에 저장해줍니다.
 
-<img src="https://wikidocs.net/images/page/198213/3.png" width="400" height="300"/>
+<img src="https://wikidocs.net/images/page/198213/5.png" width="600" height="500"/>
+
 #### 리소스 탐색기에 추가된 이미지들을 확인할 수 있습니다.
 
   4. ui에 이미지 적용하기
@@ -45,18 +50,20 @@
 
 
 #### 다음과 같이 code 가 적용되는 것을 볼 수 있습니다.
-<img src="https://wikidocs.net/images/page/198213/10.png" width="1000" height="300"/>
+<img src="https://wikidocs.net/images/page/198213/10.png" width="700" height="300"/>
 
 
 #### 저대로 적용하면 바탕화면 이미지가 input LineEdit 및 로그인 버튼까지 전체 화면을 다 덮어버리므로 아래처럼 약간의 code 수정을 하고 ‘적용’ , ‘확인’ 버튼을 click 합니다.
-<img src="https://wikidocs.net/images/page/198213/11.png" width="1000" height="300"/>
+<img src="https://wikidocs.net/images/page/198213/11.png" width="700" height="300"/>
 
 
 #### 아래와 같이 이미지가 잘 적용되었다면 성공입니다.
 <img src="https://wikidocs.net/images/page/198213/12.png" width="600" height="500"/>
+
 #### 저장 후 미리보기로 잘 적용이 되었는지 한번 더 확인합니다.
 
-#### 다른 이미지와 스타일 적용해 화면 완성하기
+  5. 다른 이미지와 스타일 적용해 화면 완성하기
+     
 #### login page Title 과 실전, 모의 버튼도 이미지를 적용해 줍니다.
 #### LineEdit 부분은 ‘border-radius’ 를 제외하면 특별히 적용할 부분이 없으므로 생략하고
 #### 로그인 버튼 활성, 비활성 스타일을 간단하게 설명하면 다음과 같습니다.
@@ -73,9 +80,8 @@
 #### 적용이 다 되었으면 저장 후 미리보기로 확인해 아래와 같이 보이면 성공입니다.
 <img src="https://wikidocs.net/images/page/198213/14.png" width="600" height="500"/>
 
-***
-
-- login.py에서 이미지 적용하기
+  6. login.py에서 이미지 적용하기
+     
 #### 먼저 vscode를 관리자 권한으로 실행해 작업용 폴더를 불러온 뒤 탐색기에 있는 폴더명 옆 파일생성 아이콘을 click 해서 login.py file 과 main.py file 을 개발용 폴더 안에 생성합니다. ( main.py 는 ‘개발용 패키지 설치’ 할 때 먼저 만들어놨으므로 login.py 만 추가 생성합니다. )
 <img src="https://wikidocs.net/images/page/198213/15.png" width="600" height="400"/>
 
