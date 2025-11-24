@@ -20,8 +20,8 @@
   * 디자인 툴 설치
   * vscode 환경설정
 
-### [2. pyQt5로 UI 제작하기](https://wikidocs.net/197891)
-  * login page 만들기
+### 2. pyQt5로 UI 제작하기
+  * [login page 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/login_page_design.md)
   * main page 만들기
   * login page 디자인하기
   * main page 디자인하기
