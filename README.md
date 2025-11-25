@@ -28,7 +28,7 @@
 
 ### [3. 로그인부터 버전처리](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Login_to_settings.md)
 
-### [4. 종목 받아오기](https://wikidocs.net/198164)
+### [4. 종목 받아오기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/getAllStockList.md)
 
 ### [5. 계좌 연결하기](https://wikidocs.net/197892)
   * 5초마다 예탁자산 화면 업데이트
