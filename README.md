@@ -36,7 +36,7 @@
 
 ### [6. 실시간 OHLCV 받아오기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/connect_receive.md)
 
-### [7. 매수, 매도 구현하기](https://wikidocs.net/197895)
+### [7. 매수, 매도 구현하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/buy_sell.md)
 
 ### [8. 실시간 호가창 구현하기](https://wikidocs.net/197894)
 
