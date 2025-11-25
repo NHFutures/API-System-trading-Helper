@@ -31,8 +31,8 @@
 ### [4. 종목 받아오기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/getAllStockList.md)
 
 ### [5. 계좌 연결하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/connect_account.md)
-  * 5초마다 예탁자산 화면 업데이트
-  * 예탁 자산 화면 구현
+  * [5초마다 예탁자산 화면 업데이트](https://github.com/NHFutures/API-System-trading-Helper/blob/main/update_account.md)
+  * [예탁 자산 화면 구현](https://github.com/NHFutures/API-System-trading-Helper/blob/main/update_account.md)
 
 ### [6. 실시간 OHLCV 받아오기](https://wikidocs.net/197893)
 
