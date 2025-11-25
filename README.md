@@ -34,7 +34,7 @@
   * [5초마다 예탁자산 화면 업데이트](https://github.com/NHFutures/API-System-trading-Helper/blob/main/update_account.md)
   * [예탁 자산 화면 구현](https://github.com/NHFutures/API-System-trading-Helper/blob/main/update_account.md)
 
-### [6. 실시간 OHLCV 받아오기](https://wikidocs.net/197893)
+### [6. 실시간 OHLCV 받아오기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/connect_receive.md)
 
 ### [7. 매수, 매도 구현하기](https://wikidocs.net/197895)
 
