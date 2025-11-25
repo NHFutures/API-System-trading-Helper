@@ -26,7 +26,7 @@
   * [login page 디자인하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Design_Login_Page.md)
   * [main page 디자인하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Design_Main_Page.md)
 
-### [3. 로그인부터 버전처리](https://wikidocs.net/197803)
+### [3. 로그인부터 버전처리](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Login_to_settings.md)
 
 ### [4. 종목 받아오기](https://wikidocs.net/198164)
 
