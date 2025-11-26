@@ -7,7 +7,7 @@
 def connectReceiveReal(self, realCode: str, realKey: str, recvData: str, UserArea):
 ```
 
-## 전체코드
+## 전체 코드 보기
 ```ruby
 # 주문 체결, 미체결
         elif realCode == 'O1':
@@ -273,7 +273,7 @@ def connectReceiveReal(self, realCode: str, realKey: str, recvData: str, UserAre
 ```
 다소 길어 보이지만 나누어서 보면 별 것 아닙니다.
 
-## 세부코드 분석
+## 세부 코드 분석
 
 코드를 쪼개서 봐보겠습니다.
 
