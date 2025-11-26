@@ -46,7 +46,7 @@
 
 ### 10. 체결, 미체결 탭 구현하기
   * [전체 코드 보기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/execution_table.md)
-  * [세부 코드 분석](https://github.com/NHFutures/API-System-trading-Helper/blob/main/execution_table.md#%EC%84%B8%EB%B6%80%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D)
+  * [세부 코드 분석](https://github.com/NHFutures/API-System-trading-Helper/blob/main/execution_table.md#%EC%84%B8%EB%B6%80-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D)
 
 ### 11. 전체코드
   * [login.py](https://github.com/NHFutures/API-System-trading-Helper/blob/main/login.py)
