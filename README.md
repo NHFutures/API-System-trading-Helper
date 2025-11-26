@@ -53,8 +53,8 @@
   * [main.py](https://github.com/NHFutures/API-System-trading-Helper/blob/main/main.py)
 
 ### 12. 부록
-  * [주야간 확인](https://wikidocs.net/197906)
-  * [분봉 데이터 만들기](https://wikidocs.net/198464)
+  * [주야간 확인](https://github.com/NHFutures/API-System-trading-Helper/blob/main/supplement.md)
+  * [분봉 데이터 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/supplement.md#%EB%B6%84%EB%B4%89%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 ***
 
 > NH선물 API 시스템 거래 텔레그램 방
