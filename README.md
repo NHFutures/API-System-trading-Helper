@@ -42,10 +42,10 @@
 
 ### 9. 미결제 약정 실시간으로 구현하기
   * [실시간 O1에서 미결제약정 테이블 업데이트](https://github.com/NHFutures/API-System-trading-Helper/blob/main/open_interest_O1.md)
-  * 실시간 KA(현재가)를 미결제약정 테이블에 업데이트
+  * [실시간 KA(현재가)를 미결제약정 테이블에 업데이트](https://github.com/NHFutures/API-System-trading-Helper/blob/main/open_interest_KA.md)
 
-### [10. 체결, 미체결 탭 구현하기](https://wikidocs.net/197896)
-  * 전체 코드 보기
+### 10. 체결, 미체결 탭 구현하기
+  * [전체 코드 보기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/execution_table.md#%EC%A0%84%EC%B2%B4%EC%BD%94%EB%93%9C)
   * 세부 코드 분석
 
 ### 11. 전체코드
