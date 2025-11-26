@@ -40,8 +40,8 @@
 
 ### [8. 실시간 호가창 구현하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/connect_hoga.md)
 
-### [9. 미결제 약정 실시간으로 구현하기](https://github.com/NHFutures/API-System-trading-Helper/new/main)
-  * 실시간 O1에서 미결제약정 테이블 업데이트
+### 9. 미결제 약정 실시간으로 구현하기
+  * [실시간 O1에서 미결제약정 테이블 업데이트](https://github.com/NHFutures/API-System-trading-Helper/blob/main/open_interest_O1.md)
   * 실시간 KA(현재가)를 미결제약정 테이블에 업데이트
 
 ### [10. 체결, 미체결 탭 구현하기](https://wikidocs.net/197896)
