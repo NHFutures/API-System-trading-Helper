@@ -38,7 +38,7 @@
 
 ### [7. 매수, 매도 구현하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/buy_sell.md)
 
-### [8. 실시간 호가창 구현하기](https://wikidocs.net/197894)
+### [8. 실시간 호가창 구현하기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/connect_hoga.md)
 
 ### [9. 미결제 약정 실시간으로 구현하기](https://wikidocs.net/197901)
   * 실시간 O1에서 미결제약정 테이블 업데이트
