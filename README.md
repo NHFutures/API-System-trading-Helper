@@ -10,15 +10,15 @@
 
 -----------------------------------
 
-### [1. 개발 환경 구축하기](https://wikidocs.net/193550)
-  * NH API 다운로드
-  * python 설치
-  * vscode 설치
-  * ocs 등록
-  * 미니콘다 설치
-  * 가상환경에 패키지 설치
-  * 디자인 툴 설치
-  * vscode 환경설정
+### 1. 개발 환경 구축하기
+  * [NH API 다운로드](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md)
+  * [python 설치](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md)
+  * [vscode 설치](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md)
+  * [ocs 등록](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md#4-ocx-%EB%93%B1%EB%A1%9D)
+  * [미니콘다 설치](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md#5-%EB%AF%B8%EB%8B%88%EC%BD%98%EB%8B%A4-%EC%84%A4%EC%B9%98)
+  * [가상환경에 패키지 설치](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md#6-%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD%EC%97%90-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98)
+  * [디자인 툴 설치](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md#7-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%B4-%EC%84%A4%EC%B9%98)
+  * [vscode 환경설정](https://github.com/NHFutures/API-System-trading-Helper/blob/main/environment_settings.md#8-vscode-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95)
 
 ### 2. pyQt5로 UI 제작하기
   * [login page 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/Build_Login_Page.md)
@@ -55,6 +55,7 @@
 ### 12. 부록
   * [주야간 확인](https://github.com/NHFutures/API-System-trading-Helper/blob/main/supplement.md)
   * [분봉 데이터 만들기](https://github.com/NHFutures/API-System-trading-Helper/blob/main/supplement.md#%EB%B6%84%EB%B4%89%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+  * [자동 로그인 세팅](https://github.com/NHFutures/API-System-trading-Helper/blob/main/auto_login_settings.py)
 ***
 
 > NH선물 API 시스템 거래 텔레그램 방
