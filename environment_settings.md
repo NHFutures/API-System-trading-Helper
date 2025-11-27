@@ -32,7 +32,7 @@ OCX란 윈도우에서 프로그램간 데이터 연결을 위해 작성된 규�
 #### > regsvr32 
 <img src="https://wikidocs.net/images/page/197677/%EC%BA%A1%EC%B2%982.JPG" width="1200" height="600"/>
 
-## 5. 미니콘다 등록
+## 5. 미니콘다 설치
 
 미니콘다란 가상환경에서 개발을 할 수 있게 해주는 툴입니다.
 
