@@ -11,7 +11,7 @@
 
 ## 2. Python 설치
 
-[파이썬 홈페이지](https://www.python.org/downloads/)에서 파이썬 최신버전을 다운로드 받습니다.
+[파이썬 홈페이지](https://www.python.org/downloads/)에서 파이썬 3.9.x 버전을 다운로드 받습니다.
 
 ## 3. vscode 설치
 
