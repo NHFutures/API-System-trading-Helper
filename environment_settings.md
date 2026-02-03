@@ -30,7 +30,7 @@ OCX란 윈도우에서 프로그램간 데이터 연결을 위해 작성된 규�
 아까전 C드라이브 밑에 NH 폴더에 압축을 잘 풀어두었다면 아래와 같이 경로를 입력해서 등록을 해줍니다.
 
 #### > regsvr32 
-<img src="https://wikidocs.net/images/page/197677/%EC%BA%A1%EC%B2%982.JPG" width="1200" height="600"/>
+<img src="https://static.wikidocs.net/images/page/197677/%EC%BA%A1%EC%B2%982.JPG" width="1200" height="600"/>
 
 ## 5. 미니콘다 설치
 
@@ -44,41 +44,41 @@ OCX란 윈도우에서 프로그램간 데이터 연결을 위해 작성된 규�
 
 다운로드 받은 미니콘다 파일을 실행하면 설치를 시작할 수 있습니다.
 
-<img src="https://wikidocs.net/images/page/197678/EB8BA4EC9AB4EBA19CEB939C.jpg" width="500" height="400"/>
+<img src="https://static.wikidocs.net/images/page/197678/EB8BA4EC9AB4EBA19CEB939C.jpg" width="500" height="400"/>
 
 다음을 계속 누르다가 아래 화면에서 멈춰줍니다. 상단 체크박스는 환경변수 설정 부분으로 체크 안해도 큰 문제는 없지만 추후 환경변수 설정을 따로 해야하는 번거로움이 있을 수 있기 때문에 체크 후 install 합니다.
 
-<img src="https://wikidocs.net/images/page/197678/EB8BA4EC9AB4EBA19CEB939C_3.jpg" width="500" height="400"/>
+<img src="https://static.wikidocs.net/images/page/197678/EB8BA4EC9AB4EBA19CEB939C_3.jpg" width="500" height="400"/>
 
 계속 다음을 눌러 finish를 합니다.
 
 검색창에 ‘Anaconda Prompt’를 입력해 설치된 ‘Anaconda Prompt’를 관리자 권한으로 실행합니다.
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_171550.png" width="500" height="600"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_171550.png" width="500" height="600"/>
 
 다음과 같이 입력해서 미니콘다가 잘 설치되었는지 conda —version을 확인해 봅니다.
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_172445.png" width="600" height="100"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_172445.png" width="600" height="100"/>
 
 설치가 잘 되었다면 다음과 같이 입력하여 미니콘다를 32bit 환경으로 변경해 줍니다. (국내 증권사 프로그램들은 전부 32비트를 사용) 
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_174938.png" width="600" height="400"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_174938.png" width="600" height="400"/>
 
 다음과 같이 ‘conda info’를 입력해 32bit로 설정이 되었는지 확인합니다.
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_175405.png" width="300" height="50"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_175405.png" width="300" height="50"/>
 
 32bit 환경설정이 되었다면 prompt에 ‘conda env list’를 입력해 아나콘다 환경을 확인해 봅니다.
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_181940.png" width="500" height="80"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_181940.png" width="500" height="80"/>
 
 그러면 위와 같이 base라는 기본환경 1개만 setting이 되어 있는 걸 확인할 수 있는데 여기에 작업을 할 새로운 가상환경을 추가해 주기 위해 ‘conda create -n {가상환경명 - 임의대로 작성} python={버전}’을 입력해 줍니다.
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_182529.png" width="550" height="50"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_182529.png" width="550" height="50"/>
 
 다시 ‘conda env list’를 입력해 아나콘다 환경을 확인해보면 가상환경이 추가된 것을 확인할 수가 있습니다.
 
-<img src="https://wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_182946.png" width="400" height="100"/>
+<img src="https://static.wikidocs.net/images/page/197678/EC8AA4ED81ACEBA6B0EC83B7_2023-04-06_182946.png" width="400" height="100"/>
 
 추가된 가상환경을 활성화 하는 명령어 ‘conda activate {가상환경명}’ 를 입력 후 (base) 표시가 ({가상환경명})으로 바뀌면 가상환경 설정이 끝납니다.
 
@@ -140,15 +140,15 @@ pip install pyside2
 ```
 conda info
 ```
-<img src="https://wikidocs.net/images/page/197801/Untitled.png" width="300" height="50"/>
-<img src="https://wikidocs.net/images/page/197801/ECBD98EB8BA42.png" width="900" height="500"/>
+<img src="https://static.wikidocs.net/images/page/197801/Untitled.png" width="300" height="50"/>
+<img src="https://static.wikidocs.net/images/page/197801/ECBD98EB8BA42.png" width="900" height="500"/>
 찾고나서 파일탐색기 경로에 pyside2를 붙여서 입력해줍니다.
 
-<img src="https://wikidocs.net/images/page/197801/EC9584EB8298ECBD98EB8BA41_1.png" width="600" height="350"/>
+<img src="https://static.wikidocs.net/images/page/197801/EC9584EB8298ECBD98EB8BA41_1.png" width="600" height="350"/>
 
 그러면 designer라는 파일이 보이는데요. 바로가기 생성을 해서 바탕화면에 놓아주시면 준비가 끝납니다.
 
-<img src="https://wikidocs.net/images/page/197801/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_183210.png" width="900" height="500"/>
+<img src="https://static.wikidocs.net/images/page/197801/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_183210.png" width="900" height="500"/>
 
 디자이너의 사용법은 2장에서 자세하게 다루겠습니다.
 
@@ -158,18 +158,18 @@ conda info
 
 그리고 작업할 폴더를 생성합니다.
 
-<img src="https://wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_095444.png" width="700" height="200"/>
+<img src="https://static.wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_095444.png" width="700" height="200"/>
 
 vscode 우측 하단 상태표시줄에서 인터프리터 부분을 클릭합니다.
 
-<img src="https://wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_095958.png" width="600" height="90"/>
+<img src="https://static.wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_095958.png" width="600" height="90"/>
 
 상단부에 열린 인터프리터 선택 창에서 설정했던 32bit 가상환경을 선택합니다.
 
-<img src="https://wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_100114.png" width="600" height="200"/>
+<img src="https://static.wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_100114.png" width="600" height="200"/>
 
 인터프리터가 변환된 걸 확인할 수 있습니다.
 
-<img src="https://wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_100311.png" width="500" height="50"/>
+<img src="https://static.wikidocs.net/images/page/197804/EC8AA4ED81ACEBA6B0EC83B7_2023-04-07_100311.png" width="500" height="50"/>
 
 이처럼 윈도우 운영체제가 64bit이여도 임의로 만든 32bit 가상환경에서 우리는 python 프로그램을 실행시킬 수 있습니다.
